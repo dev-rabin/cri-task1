@@ -1,38 +1,137 @@
-.App {
+body{
+  margin: 0;
+  padding: 3px;
+  box-sizing: border-box;
+  background: linear-gradient(white , rgb(255, 255, 135));
+}
+.header div{
+  text-align: center;
+}
+.header img{
+  max-width: 30%;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-1{
+  height: 110vh;
+}
+
+.img-2{
+  max-width: 100%;
+}
+
+.content-para{
+  font-weight: bold;
+}
+
+.para{
+  text-align:center ;
+  margin: 15px;
+}
+
+.equip-img{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.equip-img img{
+  max-width: 85%;
+}
+.para2{
+  text-align: center;
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hr{
+  border: 1px solid #ff1b31;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.footer-content{
+  background-color: #ff1b31;
   color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-content a{
+  color: white;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 425px){
+  .img-1{
+    height: 5vh
   }
 }
+@media (max-width: 568px){
+  .img-1{
+    height: 30vh
+  }
+}
+
+@media (max-width: 768px) {
+  body{
+    margin: 5px;
+  }
+  .img-1{
+    height: 40vh
+  }
+ .container{
+  flex-direction: column;
+ }
+ .content-para2{
+  text-align: justify;
+ }
+ .content-para{
+  text-align: center;
+ }
+}
+
+@media (max-width: 425px) {
+  .img-1 {
+    height: 25vh;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 568px) {
+  .img-1 {
+    height: 30vh;
+  }
+}
+
+@media (min-width: 569px) and (max-width: 768px) {
+  body {
+    margin: 5px;
+  }
+  .img-1 {
+    height: 40vh;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .content-para2 {
+    text-align: justify;
+  }
+  .content-para {
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .img-1 {
+    height: 55vh;
+  }
+}
+
+@media (min-width: 1024px){
+  .img-1 {
+    height: 100vh;
+  }
+}
+
+
