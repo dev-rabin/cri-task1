@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  padding: 3px;
+  padding: 5px;
   box-sizing: border-box;
   background: linear-gradient(white , rgb(255, 255, 135));
 }
@@ -124,13 +124,13 @@ body{
 
 @media (min-width: 769px) and (max-width: 1023px) {
   .img-1 {
-    height: 55vh;
+    height: 90vh;
   }
 }
 
 @media (min-width: 1024px){
   .img-1 {
-    height: 100vh;
+    height: 110vh;
   }
 }
 
